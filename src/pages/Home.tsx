@@ -23,7 +23,7 @@ export function Home({ player, leaderboard, onStart }: HomeProps) {
                 Daily case desk
               </p>
               <h1 className="max-w-xl text-4xl font-black leading-tight md:text-5xl">
-                Cyber Detective Agency
+                Phish and Chips
               </h1>
               <p className="mt-4 max-w-2xl text-lg text-slate-200">
                 Review citizen reports, spot suspicious emails, and explain the clues that prove
