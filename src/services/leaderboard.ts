@@ -21,20 +21,20 @@ export function loadLeaderboard(): LeaderboardEntry[] {
 
 export function savePlayerResult(
   username: string,
-  points: number,
+  chips: number,
   wasCorrect: boolean,
 ): LeaderboardEntry[] {
   const board = loadLeaderboard();
   const existing = board.find((entry) => entry.username.toLowerCase() === username.toLowerCase());
 
   if (existing) {
-    existing.score += points;
+    existing.score += chips;
     existing.casesSolved += 1;
     existing.correct += wasCorrect ? 1 : 0;
   } else {
     board.push({
       username,
-      score: points,
+      score: chips,
       casesSolved: 1,
       correct: wasCorrect ? 1 : 0,
     });
